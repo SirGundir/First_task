@@ -65,8 +65,8 @@ git log
 
 ```mermaid
 graph LR;
-	untracked -- "git add" --> staged + tracked;
-	staged + tracked -- "git commit" --> tracked;
+	untracked -- "git add" --> staged + tracked
+	staged + tracked -- "git commit" --> tracked
 	tracked -- "Изменения" --> modified
 	modified -- "git add" --> staged + tracked
 	staged + tracked -- "Изменения" --> modified
